@@ -17,6 +17,11 @@ ruleTester.run('custom tag name', rule, {
       parserOptions,
       code: 'const x = myGraphQLTag`{ number }`',
     },
+    {
+      options,
+      parserOptions,
+      code: 'const x = /* GraphQL */ `{ number }`',
+    },
   ],
 
   invalid: [

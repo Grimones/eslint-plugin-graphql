@@ -76,7 +76,7 @@ const defaultRuleProperties = {
   },
   tagName: {
     type: 'string',
-    pattern: '^[$_a-zA-Z$_][a-zA-Z0-9$_]+(\\.[a-zA-Z0-9$_]+)?$',
+    pattern: '^(\\/\\*\\s)?[$_a-zA-Z$_][a-zA-Z0-9$_]+(\\.[a-zA-Z0-9$_]+)?(\\s\\*\\/)?$',
   },
   projectName: {
     type: 'string'
